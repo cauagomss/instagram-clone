@@ -1,0 +1,262 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+/* CONTAINERS */
+#main-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+#banner-container,
+#form-main {
+    flex: 1 1 0;
+    width: 50%;
+}
+
+/* BANNER */
+#banner-container {
+    /* TEXT ALIGN EQUIVALE PARA IMAGENS */
+    text-align: right;
+}
+
+#banner-container img {
+   width: 100%;
+   margin-right: 15px;
+   margin-top: 25px;
+   max-width: 380px;
+}
+
+/* FORM */
+#form-main {
+    text-align: center;
+}
+
+#form-box {
+    background-color: #FFF;
+    border: 1px solid #DBDBDB;
+    width: 350px;
+    margin-top: 30px;
+}
+
+#logo-insta {
+    cursor: pointer;
+    height: 51px;
+    width: 175px;
+    margin: 30px auto 12px;
+}
+
+#login-form {
+    margin-top: 20px;
+}
+
+#login-form input {
+    display: block;
+    font-size: 12px;
+    padding: 12px 9px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin: 5px auto;
+    width: 268px;
+}
+
+#login-form input[type="submit"] {
+    cursor: pointer;
+    background-color: #4cb5f9;
+    color: #FFF;
+    margin-top: 15px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 13px;
+    padding: 0;
+    font-weight: bold;
+}
+
+.separador {
+    position: relative;
+}
+
+.line {
+    border: 1px solid #dbdbdb;
+    width: 268px;
+    margin: 25px auto 35px;
+}
+
+.separador span {
+    font-size: 13px;
+    position: absolute;
+    text-transform: uppercase;
+    color: #737373;
+    background-color: #FFF;
+    top: -6px;
+    width: 50px;
+    /* CENTRALIZAÇÃO ELEMENTOS ABSOLUTOS */
+    margin-left: -25px; 
+}
+
+/* FACEBOOK LOGIN */
+#facebook-login {
+    margin-bottom: 25px;
+}
+
+/* LOGO */
+#facebook-login img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+/* TEXT-LOGO */
+#facebook-login a {
+    color: #385185;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#facebook-login span {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 1px;
+}
+
+/* FORGOT PASS */
+#forgot-pass {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+#forgot-pass a {
+    text-decoration: none;
+    color: #373799;
+}
+
+/* CADASTRO */
+#register-container {
+    background-color: #FFF;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    margin-top: 20px;
+    padding: 25px;
+}
+
+#register-container span {
+    font-size: 14px;
+    color: #262626;
+}
+
+#register-container a {
+    color: #4a95f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* APPS */
+#app-container {
+    /* EQUIVALENTE A IMAGENS */
+    text-align: center;
+    width: 350px;
+}
+
+#app-container p {
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+/* RETIRAR LINHA URL DO MEIO DAS IMAGENS */
+#app-container a {
+    text-decoration: none;
+}
+
+#app-container img {
+    width: 136px;
+    height: 40px;
+}
+
+/* FOOTER */
+footer {
+    text-align: left;
+    width: 1000px;
+    margin: 50px auto;
+    /* CONTAINER ENVIADO A NIVEL INFERIOR */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #footer-links {
+    display: flex;
+    list-style: none;
+}
+
+#footer-links li {
+    margin-right: 10px;
+}
+
+#footer-links a,
+#copyright,
+#lang-footer {
+    text-decoration: none;
+    color: #737373;
+    font-size: 12px;
+}
+
+#copyright,
+#lang-footer {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+select {
+    color: #737373;
+    border: none;
+    font-size: 12px;
+}
+
+
+
+/* REPONSIVO MOBILE */
+
+@media screen and (max-width:425px) {
+
+    body {
+       background-color: #FFF;
+    }
+
+    #banner-container {
+        display: none;
+    }
+
+    #form-main,
+    #form-box {
+        margin-top: 0;
+    }
+
+    #form-main,
+    #form-box,
+    #register-container,
+    #app-container {
+        border: none;
+        width: 100%;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+    #footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
